@@ -1,0 +1,30 @@
+import React from 'react';
+import styles from "../../app/page.module.css";
+import Image from "next/image";
+import TopBannerImage from "../../assets/svgs/TopBannerImage.svg";
+
+const TopBanner = () => {
+    return (
+        <div className={`${styles.topBanner} container-fluid row mx-0`}>
+            <div className="col-6">
+                <h1 className='text-white'>
+                    We Turn Ideas into <br />
+                    <span className={styles.immersive}>Immersive</span> <br />
+                    Experiences
+                </h1>
+                <p className="lead text-white mt-3">
+                    Crafting Brands, Engineering Experiences, Pioneering Design Evolution
+                </p>
+
+                <button type='button' className={`${styles.topBannerBtn} rounded-pill my-0`}
+                >Button</button>
+            </div>
+
+            <div className="col-6">
+                <Image src={TopBannerImage} alt="banner image" className='img-fluid' />
+            </div>
+        </div>
+    )
+}
+
+export default TopBanner
