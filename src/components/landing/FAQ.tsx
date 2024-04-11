@@ -2,7 +2,7 @@
 
 import React from "react";
 import styles from "../../app/page.module.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import ImportBootstrap from "../reusables/ImportBoostrap";
 
 const FAQ = () => {
     const faqs = [
@@ -30,6 +30,7 @@ const FAQ = () => {
 
     return (
         <div className={styles.faq}>
+            <ImportBootstrap />
             <h2>Frequently Asked Questions</h2>
 
             <div className="accordion accordion-flush" id="accordionFlushExample">
