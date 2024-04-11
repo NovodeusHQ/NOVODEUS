@@ -21,7 +21,7 @@ const SelectedProjects = () => {
                     return (
                         <div className="col-6 my-2" key={idx}>
                             <Link href="#">
-                                <Image src={project} alt={`project-${idx}`} className='img-fluid'/>
+                                <Image src={project} alt={`project-${idx}`} className='img-fluid' loading='eager'/>
                             </Link>
                         </div>
 
