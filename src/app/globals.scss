@@ -1,0 +1,138 @@
+@import "../assets/scss/variables";
+
+.show-border {
+  border: 1px solid red;
+}
+
+.navbar-link {
+  color: white !important;
+}
+
+.contact-us-btn {
+  background-color: #7257ff !important;
+  color: white !important;
+  opacity: 1;
+  width: 147px;
+  height: 48%;
+  /* border-radius: 25px; */
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #131214;
+}
+
+.footer-brand {
+  scale: 1.2;
+}
+
+.main-footer {
+  border-bottom: 1px solid white;
+  width: 100% !important;
+}
+
+.footer-header {
+  color: #ffffff;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Satoshi, Inter, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 350;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.footer-item {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #898d8f;
+}
+
+.fg-subtle {
+  color: #898d8f;
+}
+
+.connect-with-us {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 27.3px;
+  text-align: left;
+  color: #898d8f;
+}
+
+.carousel-indicators button {
+  background-color: #131214 !important;
+  width: 32px !important;
+  height: 8px !important;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+/* == Swiper == */
+.mySwiper {
+  background-color: $primary;
+  color: white;
+  padding: 6rem 3rem 6rem 3rem;
+}
+
+.swiper-pagination {
+  /* top: 10% !important; */
+  display: flex;
+  justify-content: left;
+}
+
+.swiper-pagination-bullet-active {
+  background: $white !important;
+  // width: 14px;
+  // height: 14px;
+  width: 72px;
+  height: 8px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background: $white !important;
+  width: 72px;
+  height: 8px;
+  // transform: scale(1) !important;
+  // border: solid 1px var(--white);
+  opacity: 0.3;
+}
+
+.swiper-button-prev {
+  top: 90% !important;
+  right: 3rem !important;
+  left: auto !important;;
+}
+
+.swiper-button-prev::after {
+  content: url(../assets/svgs/icons/sliderPrev.svg) !important;
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-button-next {
+  top: 90% !important;
+  right: 1rem !important;
+  left: auto !important;;
+}
+
+.swiper-button-next::after {
+  content: url(../assets/svgs/icons/sliderNext.svg) !important;
+  width: 24px;
+  height: 24px;
+}

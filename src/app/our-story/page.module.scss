@@ -1,0 +1,81 @@
+.topBanner {
+  width: 100%;
+  /* height: 450px !important; */
+  height: auto;
+  /* margin-top: 25px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url(../../assets/images/OurStoryTopBackground.png);
+  background-size: cover;
+  /* -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover; */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem 5.5rem 6rem 3rem;
+}
+
+.topBannerContent {
+  color: white;
+  max-width: 65%;
+
+  h1 {
+    font-size: 128px;
+    font-weight: 900;
+    line-height: 153.6px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+  }
+}
+
+.hello {
+  color: rgba(255, 207, 0, 1);
+}
+
+.midHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem 0rem 2rem;
+
+  h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  P {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: #131214;
+  }
+}
+
+.ourTeam {
+  background-color: #131214;
+  color: white;
+  padding: 3rem;
+}
+
+.teamMember {
+  background-color: #EFF6F3;
+  color: black;
+
+  hgroup {
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+}

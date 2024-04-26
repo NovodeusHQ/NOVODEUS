@@ -13,7 +13,7 @@ const SelectedProjects = () => {
     ];
 
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid mt-5 px-5'>
             <h2 className='satoshi mb-3'>Selected Projects</h2>
 
             <div className="row d-flex justify-content-between">

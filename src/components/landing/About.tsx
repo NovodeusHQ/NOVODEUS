@@ -6,14 +6,14 @@ import { images, icons } from '@/exports/image';
 
 const About = () => {
     return (
-        <div className=''>
-            <p className='text-center my-4 px-5 satoshi'>
+        <div className='px-5'>
+            <p className='text-center my-4 px-5 '>
                 We&apos;re not just an agency; we&apos;re pioneers of design evolution. We sculpt digital landscapes, breathe life into brands, and engineer experiences that resonate.
             </p>
 
             <div className={styles.divider} >
                 <hr className="" />
-                <span className="divider-text satoshi">We have designed and built products for</span>
+                <span className="divider-text ">We have designed and built products for</span>
                 <hr className="" />
             </div>
 
@@ -42,11 +42,11 @@ const About = () => {
 
                 <div className="col-7 why-choose py-5">
                     <div className='mb-3'>
-                        <h3 className='satoshi'>
+                        <h3 className=''>
                             <Image src={icons.whyChoose} alt="bullet point" /> &nbsp; Why Choose Novodeus
                         </h3>
 
-                        <h2 className='satoshi'>
+                        <h2 className=''>
                             Innovation-Fuelled Solutions Tailored for You
                         </h2>
                     </div>
@@ -57,10 +57,10 @@ const About = () => {
                                 <Image src={icons.tailoredSolutions} alt="bullet point" />
                             </div>
                             <div className='col-11 ps-5'>
-                                <h4 className='satoshi'>
+                                <h4 className=''>
                                     Tailored Solutions for Your Vision
                                 </h4>
-                                <p className='satoshi'>
+                                <p className=''>
                                     We believe in the power of bespoke solutions. Our team works closely with you, understanding your vision, and tailoring strategies that bring your ideas to life in ways that surpass expectati
                                 </p>
                             </div>
@@ -70,10 +70,10 @@ const About = () => {
                                     <Image src={icons.checkeredBoard} alt="bullet point" />
                                 </div>
                                 <div className='col-11 ps-5'>
-                                    <h4 className='satoshi'>
+                                    <h4 className=''>
                                         Agile Methodologies for Rapid Results
                                     </h4>
-                                    <p className='satoshi'>
+                                    <p className=''>
                                         Novodeus operates with agility. We adapt swiftly to industry trends, ensuring timely delivery of solutions that stay ahead in a rapidly changing landscape.
                                     </p>
                                 </div>
@@ -84,10 +84,10 @@ const About = () => {
                                         <Image src={icons.collaborative} alt="bullet point" />
                                     </div>
                                     <div className='col-11 ps-5'>
-                                        <h4 className='satoshi'>
+                                        <h4 className=''>
                                             Collaborative, Client-Centric Approach
                                         </h4>
-                                        <p className='satoshi'>
+                                        <p className=''>
                                             Your triumph is our focal point. We collaborate closely, placing you at the core of each decision to align strategies with your brand&apos;s aspirations.
                                         </p>
                                     </div>
