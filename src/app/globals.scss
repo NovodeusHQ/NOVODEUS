@@ -1,5 +1,15 @@
 @import "../assets/scss/variables";
 
+.navbar-toggler {
+  border-color: #ffffff !important;
+}
+
+// == Layout ==
+.navbar-toggler-icon {
+  color: white !important;
+  background-image: url(../assets/svgs/icons/navigationToggler.svg) !important;
+}
+
 .show-border {
   border: 1px solid red;
 }
@@ -87,6 +97,14 @@ h3 {
   background-color: $primary;
   color: white;
   padding: 6rem 3rem 6rem 3rem;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .swiper-pagination {
@@ -116,7 +134,7 @@ h3 {
 .swiper-button-prev {
   top: 90% !important;
   right: 3rem !important;
-  left: auto !important;;
+  left: auto !important;
 }
 
 .swiper-button-prev::after {
@@ -128,7 +146,7 @@ h3 {
 .swiper-button-next {
   top: 90% !important;
   right: 1rem !important;
-  left: auto !important;;
+  left: auto !important;
 }
 
 .swiper-button-next::after {
@@ -136,3 +154,4 @@ h3 {
   width: 24px;
   height: 24px;
 }
+

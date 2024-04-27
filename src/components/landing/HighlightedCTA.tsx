@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../../app/page.module.css";
+import styles from "../../app/page.module.scss";
 import Image from 'next/image';
 import { images } from '@/exports/image';
 import Button from '../reusables/Button';
@@ -11,7 +11,7 @@ const HighlightedCTA = () => {
                 <div className="col-12 col-md-6 d-flex align-items-center">
                     <h1>Ready to Bring Your Vision to Life?
                         <br />
-                        <Button text={"Let's Talk"} padding='4rem' />
+                        <Button text={"Let's Talk"} padding='4rem' className='mt-3 mt-md-0'/>
                     </h1>
 
                 </div>

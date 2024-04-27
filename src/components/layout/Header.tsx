@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-black bg-black px-5">
             <div className="container-fluid d-flex align-items-center">
-                <Link className="navbar-brand py-0" href="#">
+                <Link className="navbar-brand py-0" href="/">
                     <Image src={Logo} alt='brand logo' className='my-2'/>
                 </Link>
                 {/* <Image src={Logo} alt='brand logo' className='mt-0'/> */}
@@ -17,13 +17,13 @@ const Header = () => {
                 <div className="collapse navbar-collapse navbar-link" id="navbarText">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item mx-5">
-                            <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <Link className="nav-link active text-white" aria-current="page" href="/">Home</Link>
                         </li>
                         <li className="nav-item mx-5">
-                            <a className="nav-link text-white" href="#">Projects</a>
+                            <Link className="nav-link text-white" href="/our-projects">Projects</Link>
                         </li>
                         <li className="nav-item mx-5">
-                            <a className="nav-link text-white" href="#">About</a>
+                            <Link className="nav-link text-white" href="/about-us">About</Link>
                         </li>
                     </ul>
                     <span className="py-0">

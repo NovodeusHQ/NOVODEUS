@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from "../../app/page.module.css";
+import styles from "../../app/page.module.scss";
 import Image from 'next/image';
 import { icons } from '@/exports/image';
 
 const Services = () => {
     return (
         <div className={`${styles.services} row`}>
-            <div className="col-5">
-                <h3 className='mb-3'> <Image src={icons.whyChoose} alt="bullet point" /> &nbsp; Services</h3>
+            <div className="col-12 col-md-5 px-3 px-md-0">
+                <h3 className='mt-4 mt-md-0 mb-3 text-start'> <Image src={icons.whyChoose} alt="bullet point" /> &nbsp; Services</h3>
 
                 <h2 className='mb-4'>From Vision to Reality</h2>
 
@@ -17,7 +17,7 @@ const Services = () => {
 
             </div>
 
-            <div className="col-7">
+            <div className="col-12 col-md-7">
                 <div className="row">
                     <div className={`${styles.craftingBrands} ${styles.serviceCard} col-6`}>
                         <Image src={icons.craftingBrands} alt="crafting brands icons" className='mb-4' />

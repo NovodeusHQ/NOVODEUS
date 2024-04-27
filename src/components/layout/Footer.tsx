@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Logo from '../../assets/svgs/Logo.svg';
 import Telephone from '../../assets/svgs/icons/telephone.svg';
 import Message from '../../assets/svgs/icons/message.svg';
@@ -28,14 +29,14 @@ const Footer = () => {
                     <h3 className='connect-with-us mt-4'>Connect with us</h3>
 
                     <div className='mb-4'>
-                        <Image src={Instagram} alt='instagram' className='' />
+                        <Link href="#"><Image src={Instagram} alt='instagram' className='' /></Link>
                         &nbsp; &nbsp;
-                        <Image src={Behance} alt='instagram' className='' />
+                        <Link href="#"><Image src={Behance} alt='instagram' className='' /></Link>
                     </div>
 
                 </div>
 
-                <div className="col-12 col-md-9 row">
+                <div className="col-12 col-md-9 px-5 px-md-0 row">
                     <div className="d-none d-md-block col-md-2"></div>
                     <div className="col-12 col-md-3 mt-2 mt-md-0">
                         <div className="footer-col">

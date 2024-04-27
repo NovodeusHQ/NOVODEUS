@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../app/our-story/page.module.scss';
+import styles from '../../app/about-us/page.module.scss';
 import { ITeamMember } from '@/types/dataObjs';
 import { images } from '@/exports/image';
 import Image from 'next/image';

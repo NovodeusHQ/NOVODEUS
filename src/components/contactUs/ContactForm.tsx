@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useFormStatus } from 'react-dom';
-import styles from '../../app/contact-us/page.module.css';
+import styles from '../../app/contact-us/page.module.scss';
 import ServiceButton from '../reusables/ServiceButton';
 import Image from 'next/image';
 import { images } from '@/exports/image';

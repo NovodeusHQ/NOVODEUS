@@ -1,6 +1,6 @@
 import React from 'react'
 import { IButton } from '@/types/components';
-import styles from "../../app/page.module.css";
+import styles from "../../app/page.module.scss";
 
 const Button: React.FC<IButton> = ({
     text,

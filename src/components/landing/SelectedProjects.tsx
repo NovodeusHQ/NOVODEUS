@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "../../app/page.module.scss";
 import { images } from '@/exports/image';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -13,13 +14,13 @@ const SelectedProjects = () => {
     ];
 
     return (
-        <div className='container-fluid mt-5 px-5'>
-            <h2 className='satoshi mb-3'>Selected Projects</h2>
+        <div className={`${styles.selectedProjects} container-fluid py-5 px-5`}>
+            <h2 className='mb-3'>Selected Projects</h2>
 
             <div className="row d-flex justify-content-between">
                 {projects.map((project, idx) => {
                     return (
-                        <div className="col-6 my-2" key={idx}>
+                        <div className="col-6 my-2 px-2" key={idx}>
                             <Link href="#">
                                 <Image src={project} alt={`project-${idx}`} className='img-fluid' loading='eager'/>
                             </Link>

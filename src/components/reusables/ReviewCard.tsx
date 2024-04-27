@@ -1,7 +1,7 @@
 import React from 'react';
 import { IReviewCard } from '@/types/components';
 import Image from 'next/image';
-import styles from "../../app/page.module.css";
+import styles from "../../app/page.module.scss";
 
 const ReviewCard: React.FC<IReviewCard> = ({ review }) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../app/contact-us/page.module.css';
+import styles from '../../app/contact-us/page.module.scss';
 import Image from 'next/image';
 import { images } from '@/exports/image';
 

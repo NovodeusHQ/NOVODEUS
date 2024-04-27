@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../app/explore/page.module.scss';
+import styles from '../../app/our-projects/page.module.scss';
 import Image from 'next/image';
 import { images } from '@/exports/image';
 

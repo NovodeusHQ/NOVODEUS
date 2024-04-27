@@ -1,7 +1,7 @@
 import React from 'react';
-import TopBanner from '@/components/ourStory/TopBanner';
-import MidSection from '@/components/ourStory/MidSection';
-import OurTeam from '@/components/ourStory/OurTeam';
+import TopBanner from '@/components/aboutUs/TopBanner';
+import MidSection from '@/components/aboutUs/MidSection';
+import OurTeam from '@/components/aboutUs/OurTeam';
 import CTA from '@/components/reusables/CTA';
 
 const OurStory = () => {

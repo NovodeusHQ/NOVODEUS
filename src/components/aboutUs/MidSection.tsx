@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../app/our-story/page.module.scss';
+import styles from '../../app/about-us/page.module.scss';
 import Image from 'next/image';
 import { images, icons } from '@/exports/image';
 
@@ -12,7 +12,7 @@ const MidSection = () => {
             </hgroup>
 
             <div className="container-fluid row">
-                <div className="why-choose py-5">
+                <div className={styles.whyChoose}>
                     <h3 className='mb-3'>
                         Our Core Values
                     </h3>

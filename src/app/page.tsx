@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import TopBanner from "../components/landing/TopBanner";
 import About from "../components/landing/About";
 import Services from "@/components/landing/Services";

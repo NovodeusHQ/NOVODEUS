@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { images } from '@/exports/image';
-import styles from '../../app/contact-us/page.module.css';
+import styles from '../../app/contact-us/page.module.scss';
 import ImportBootstrap from '../reusables/ImportBoostrap';
 
 const WhatClientsSay = () => {
