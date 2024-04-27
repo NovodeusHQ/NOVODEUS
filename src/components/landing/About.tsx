@@ -36,11 +36,11 @@ const About = () => {
             </div>
 
             <div className="container-fluid row">
-                <div className="col-12 col-md-5">
+                <div className="col-12 col-lg-5 d-flex justify-content-center d-lg-block">
                     <Image src={images.WhyChoose} alt="Why Choose Novodeus" className='img-fluid' />
                 </div>
 
-                <div className={`${styles.whyChoose} col-12 col-md-7 py-5`}>
+                <div className={`${styles.whyChoose} col-12 col-lg-7 py-5`}>
                     <div className='mb-3'>
                         <h3 className='text-start'>
                             <Image src={icons.whyChoose} alt="bullet point" /> &nbsp; Why Choose Novodeus

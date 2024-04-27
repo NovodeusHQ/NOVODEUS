@@ -6,7 +6,7 @@ import TopBannerImage from "../../assets/svgs/TopBannerImage.svg";
 const TopBanner = () => {
     return (
         <div className={`${styles.topBanner} container-fluid row mx-0`}>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-lg-6">
                 <h1 className='text-white'>
                     We Turn Ideas into <br />
                     <span className={styles.immersive}>Immersive</span> <br />
@@ -20,7 +20,7 @@ const TopBanner = () => {
                 >Button</button>
             </div>
 
-            <div className="col-12 col-md-6 mt-5 mt-md-0">
+            <div className="col-12 col-lg-6 mt-5 mt-lg-0">
                 <Image src={TopBannerImage} alt="banner image" className='img-fluid' />
             </div>
         </div>
