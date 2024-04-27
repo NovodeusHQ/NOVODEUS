@@ -2,19 +2,21 @@ import React from 'react';
 import styles from "../../app/page.module.scss";
 import Image from 'next/image';
 import { icons } from '@/exports/image';
+import Button from '../reusables/Button';
 
 const Services = () => {
     return (
         <div className={`${styles.services} row`}>
             <div className="col-12 col-lg-5 px-3 px-lg-0">
-                <h3 className='mt-4 mt-lg-0 mb-3 text-start'> <Image src={icons.whyChoose} alt="bullet point" /> &nbsp; Services</h3>
+                <h3 className='mt-4 mt-lg-0 mb-3 text-start fw-bold'> <Image src={icons.whyChoose} alt="bullet point" /> &nbsp; Services</h3>
 
-                <h2 className='mb-4'>From Vision to Reality</h2>
+                <h2 className='mb-4 fw-bold'>From Vision to Reality</h2>
 
-                <p>
+                <p className=''>
                     Our services transcend the ordinary. From revolutionary digital experiences to immersive brand experiences and cutting-edge development, we sculpt brilliance into every pixel.
                 </p>
 
+                <Button text='Start a Project' padding='2rem' className='my-5 mb-lg-0'/>
             </div>
 
             <div className="col-12 col-lg-7">
