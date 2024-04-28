@@ -2,10 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../assets/svgs/Logo.svg';
+import ImportBootstrap from '../reusables/ImportBoostrap';
 
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-black bg-black px-5">
+            <ImportBootstrap />
             <div className="container-fluid d-flex align-items-center">
                 <Link className="navbar-brand py-0" href="/">
                     <Image src={Logo} alt='brand logo' className='my-2'/>
