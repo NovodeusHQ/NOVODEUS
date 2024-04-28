@@ -5,7 +5,7 @@ import { images } from '@/exports/image';
 
 const TopBanner = () => {
   return (
-    <div className={styles.topBanner}>
+    <div className={`${styles.topBanner} d-flex flex-column flex-lg-row`}>
         <hgroup className={styles.topBannerContent}>
             <h1>Our <span className={styles.hello}>Story</span></h1>
             <p className='mt-3'>At Novodeus, innovation is at the core of everything we do. Founded on the belief that design and technology can reshape industries, we embarked on a journey to redefine the digital experience.</p>

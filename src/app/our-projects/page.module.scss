@@ -51,3 +51,29 @@
         border-bottom: 1px solid $primary;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .topBanner {
+      padding: 3rem 1.8rem 3rem 1.8rem;
+    }
+
+    .topBannerContent {
+
+      h1 {
+          font-size: 72px;
+          font-weight: 900;
+          line-height: 80px;
+          text-align: left;
+          max-width: 100%;
+
+      }
+
+      h2 {
+          font-size: 36px;
+          font-weight: 500;
+          line-height: 42px;
+          text-align: left;
+
+      }
+    }
+  }

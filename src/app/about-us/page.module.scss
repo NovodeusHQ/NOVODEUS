@@ -20,7 +20,7 @@
 
 .topBannerContent {
   color: white;
-  max-width: 65%;
+  // max-width: 65%;
 
   h1 {
     font-size: 128px;
@@ -77,5 +77,30 @@
   hgroup {
     width: 100%;
     padding: 1rem 0rem 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topBanner {
+    padding: 3rem 1.8rem 3rem 1.8rem;
+  }
+
+  .topBannerContent {
+
+    h1 {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 80px;
+        text-align: left;
+        max-width: 100%;
+
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
   }
 }

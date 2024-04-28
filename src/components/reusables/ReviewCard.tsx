@@ -8,7 +8,7 @@ const ReviewCard: React.FC<IReviewCard> = ({ review }) => {
     <section className={styles.reviewCard} data-swiper-slide-index="0">
         <Image src={review.companyLogo} alt="company logo" />
 
-        <p className="my-3">{review.quote}</p>
+        <p className="my-3 fw-bold">{review.quote}</p>
 
         <hgroup>
             <h6>{review.name}</h6>

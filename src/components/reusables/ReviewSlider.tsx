@@ -35,7 +35,7 @@ const ReviewSlider = () => {
 
   return (
     <section className='mySwiper'>
-      <h2 className=''>
+      <h2 className='fw-bold'>
       Real Stories from Satisfied Customers
       </h2>
       <Swiper

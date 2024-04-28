@@ -7,7 +7,7 @@ const TopBanner = () => {
     return (
         <div className={`${styles.topBanner} container-fluid row mx-0`}>
             <div className="col-12 col-lg-6">
-                <h1 className='text-white'>
+                <h1 className='text-white fw-bold'>
                     We Turn Ideas into <br />
                     <span className={styles.immersive}>Immersive</span> <br />
                     Experiences
