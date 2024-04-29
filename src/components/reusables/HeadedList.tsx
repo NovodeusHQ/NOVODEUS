@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const HeadedList: React.FC<IHeadedList> = ({ listItem }) => {
     return (
-        <div className="row mx-0" data-aos="slide-left">
+        <div className="row mx-0" data-aos="flip-down">
             <div className="col-1 px-0">
                 <Image src={listItem.bulletImage} alt="bullet point" className='' />
             </div>

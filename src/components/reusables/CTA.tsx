@@ -4,13 +4,17 @@ import Image from 'next/image';
 import { images } from '@/exports/image';
 import Button from '../reusables/Button';
 
+import localFont from "@next/font/local";
+
+const satoshiBold = localFont({ src: "../../assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff" })
+
 const CTA = () => {
     return (
         // <div className="container-fluid px-5">
             <div className={styles.rCtaContainer}>
                 <div className={`${styles.rcta} px-5 py-4 row`}>
                     <div className="col-12 col-md-6 d-flex flex-column">
-                        <h1 className='mb-2'>
+                        <h1 className={`${satoshiBold.className} mb-2`}>
                             Inspired by our work? Interested in collaborating on your next project?
                         </h1>
                         <p>

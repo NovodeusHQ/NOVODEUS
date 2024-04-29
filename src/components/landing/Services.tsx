@@ -12,7 +12,7 @@ const Services = () => {
 
                 <h2 className='mb-4 fw-bold'>From Vision to Reality</h2>
 
-                <p className=''>
+                <p className='my-0'>
                     Our services transcend the ordinary. From revolutionary digital experiences to immersive brand experiences and cutting-edge development, we sculpt brilliance into every pixel.
                 </p>
 

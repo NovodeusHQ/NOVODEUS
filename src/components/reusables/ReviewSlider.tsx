@@ -13,14 +13,14 @@ const ReviewSlider = () => {
     {
       id: 1,
       companyLogo: icons.instacart,
-      quote: "“We were able to get a published,working version of the entire website live in less than two weeks. And we didn’t have to compromise on our original designs.”",
+      quote: "“We were able to get a published, working version of the entire website live in less than two weeks. And we didn’t have to compromise on our original designs.”",
       name: "Karen Yue",
       role: "Director of Digital Marketing Technology"
     },
     {
       id: 2,
       companyLogo: icons.coinbase,
-      quote: "“We were able to get a published,working version of the entire website live in less than two weeks. And we didn’t have to compromise on our original designs.”",
+      quote: "“We were able to get a published, working version of the entire website live in less than two weeks. And we didn’t have to compromise on our original designs.”",
       name: "Karen Yue",
       role: "Director of Digital Marketing Technology"
     },
