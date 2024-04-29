@@ -54,7 +54,7 @@ const ReviewSlider = () => {
         scrollbar={{ el: '.swiper-scrollbar' }}
         // centeredSlides={true}
         breakpoints={{
-          500: {
+          0: {
             slidesPerView: 1,
           },
           768: {
