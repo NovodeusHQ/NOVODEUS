@@ -6,11 +6,11 @@ import ImportBootstrap from '../reusables/ImportBoostrap';
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-black bg-black px-5">
+        <nav className="navbar navbar-expand-lg navbar-black bg-black px-lg-5">
             <ImportBootstrap />
             <div className="container-fluid d-flex align-items-center">
                 <Link className="navbar-brand py-0" href="/">
-                    <Image src={Logo} alt='brand logo' className='my-2'/>
+                    <Image src={Logo} alt='brand logo' className='my-2' />
                 </Link>
                 {/* <Image src={Logo} alt='brand logo' className='mt-0'/> */}
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

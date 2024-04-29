@@ -1,4 +1,4 @@
-import { IReview } from "./dataObjs";
+import { IListItem, IReview } from "./dataObjs";
 
 export interface IButton {
     text: string;
@@ -8,4 +8,8 @@ export interface IButton {
 
 export interface IReviewCard {
     review: IReview;
+}
+
+export interface IHeadedList {
+    listItem: IListItem
 }

@@ -19,3 +19,9 @@ export interface IReview {
     name: string;
     role: string;
 }
+
+export interface IListItem {
+    header: string;
+    paragraph: string;
+    bulletImage: string | StaticImageData;
+}

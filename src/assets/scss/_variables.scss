@@ -60,3 +60,10 @@ $spacers: (
 );
 
 // $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+// == My Variables ==
+// $h2-font-size: 36px !important;
+// $h3-font-size: 24px !important;
+$h2-font-size: 1.8rem !important;
+$h3-font-size: 1.25rem !important;
+$h4-font-size: 0.9rem !important;
