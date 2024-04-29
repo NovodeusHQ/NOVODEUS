@@ -14,13 +14,13 @@ const SelectedProjects = () => {
     ];
 
     return (
-        <div className={`${styles.selectedProjects} container-fluid py-5 px-5`}>
+        <div className={`${styles.selectedProjects} container-fluid py-3 px-3 py-lg-5 px-lg-5`}>
             <h2 className='mb-3'>Selected Projects</h2>
 
             <div className="row d-flex justify-content-between">
                 {projects.map((project, idx) => {
                     return (
-                        <div className="col-12 col-lg-6 my-2 px-2" data-aos="zoom-out" data-aos-ease="ease-out" data-aos-duration="1200"  key={idx}>
+                        <div className="col-12 col-md-6 my-2 px-2" data-aos="zoom-out" data-aos-ease="ease-out" data-aos-duration="1200"  key={idx}>
                             <Link href="#">
                                 <Image src={project} alt={`project-${idx}`} className='img-fluid' loading='eager'/>
                             </Link>

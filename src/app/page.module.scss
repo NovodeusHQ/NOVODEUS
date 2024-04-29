@@ -334,6 +334,18 @@
 
   .services {
     padding: 0px;
+
+    p {
+      font-size: $mobile-p;
+    }
+
+    h3 {
+      font-size: $mobile-h3;
+    }
+
+    h2 {
+      font-size: $mobile-h2;
+    }
   }
 
   .faq {
@@ -380,5 +392,18 @@
   .reviewCard p {
     font-size: 18px;
     line-height: $mobile-lh;
+
+    hgroup {
+      h6 {
+        font-size: 15px;
+        font-weight: 350;
+        line-height: $mobile-lh;
+      }
+
+      p {
+        font-size: 12;
+        line-height: $mobile-lh;
+      }
+    }
   }
 }
