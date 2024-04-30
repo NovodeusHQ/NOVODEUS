@@ -155,7 +155,6 @@ h3 {
   top: 100% !important;
   left: auto !important;
   transform: translate(0%, -50%);
-
 }
 
 .swiper-button-next {
@@ -163,7 +162,6 @@ h3 {
   top: 100% !important;
   left: auto !important;
   transform: translate(0%, -50%);
-
 }
 
 .swiper-button-prev::after {
@@ -184,11 +182,13 @@ h3 {
   justify-content: center;
 }
 
-
 // == Mobile ==
 @media screen and (max-width: 600px) {
-  .mySwiper h2 {
-    font-size: $mobile-h2;
-    line-height: 1.2;
+  .mySwiper {
+    padding: 3rem 1.5rem 3rem 1.5rem;
+    h2 {
+      font-size: $mobile-h2;
+      line-height: 1.2;
+    }
   }
 }
