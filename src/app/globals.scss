@@ -1,8 +1,8 @@
 @import "../assets/scss/variables";
 
-// body {
-//   overflow: hidden !important;
-// }
+body {
+  overflow-x: hidden !important;
+}
 
 p {
   font-weight: 400;
@@ -188,6 +188,12 @@ h3 {
 
 // == Mobile ==
 @media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+  }
+
   .mySwiper {
     padding: 3rem 1.5rem 3rem 1.5rem;
 

@@ -27,7 +27,8 @@ const CTA = () => {
                     </div>
 
                     <div className="col-12 col-md-6">
-                        <Image src={images.Mockup} alt="CTA Mockup" className='img-fluid' />
+                        <Image src={images.Mockup} alt="CTA Mockup" className='img-fluid'
+                        data-aos="zoom-in" data-aos-duration="500" />
                     </div>
                 </div>
             </div>
