@@ -1,6 +1,8 @@
-import React from 'react';
+'use client'
+
+import React, { useState } from 'react';
 import styles from '../../app/our-projects/page.module.scss';
-import { IProject } from '@/types/dataObjs';
+import { IProject, IProjectCategory } from '@/types/dataObjs';
 import Image from 'next/image';
 import { images } from '@/exports/image';
 
@@ -13,21 +15,46 @@ const Projects = () => {
 
     const projects: Array<IProject> = [...Array(6)].fill(project1);
 
+    const projectCategories: Array<IProjectCategory> = [
+        {
+            id: 0,
+            title: "Product Design",
+            projects: [...projects]
+        },
+        {
+            id: 1,
+            title: "Branding",
+            projects: [...projects]
+        },
+        {
+            id: 2,
+            title: "Development",
+            projects: [...projects]
+        },
+    ];
+
+    const [activeCategory, setActiveCategory] = useState(projectCategories[0]);
+
+    const selectCategory = (idx: number) => {
+        const category: IProjectCategory = projectCategories.find(project => project.id === idx) ?? projectCategories[0];
+        setActiveCategory(category);
+    };
+
     return (
-        <div className={`${styles.projects} px-5 py-5`}>
-            <hgroup className='row mb-2'>
-                <h3 className='col-12 col-md-4 mb-3 mb-md-0'>
-                    <span className='pb-2 px-4'>Product Design</span>
-                </h3>
-                <h3 className='col-12 col-md-4 mb-3 mb-md-0'>
-                    <span className='pb-2 px-4'>Branding</span>
-                </h3>
-                <h3 className='col-12 col-md-4 mb-3 mb-md-0'>
-                    <span className='pb-2 px-4'>Development</span>
-                </h3>
+        <div className={`${styles.projects} px-3 px-lg-5 py-5`}>
+            <hgroup className='row mb-2 d-flex justify-content-center'>
+                {projectCategories.map((category, idx) => {
+                    return (
+                        <h3 className={`${idx === activeCategory.id ? styles.active : ''} col-4 py-1 py-lg-3 active`} key={idx}
+                        onClick={() => selectCategory(idx)}
+                        >
+                            {category.title}
+                        </h3>
+                    )
+                })}
             </hgroup>
 
-            <div className="row">
+            <div className="row" data-aos="slide-right" data-aos-duration="600">
                 {
                     projects.map((project, idx) => {
                         return (

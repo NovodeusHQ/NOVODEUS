@@ -12,6 +12,12 @@ export interface IProject {
     description: string;
 }
 
+export interface IProjectCategory {
+    id: number;
+    title: string;
+    projects: Array<IProject>;
+}
+
 export interface IReview {
     id: number;
     companyLogo: string | StaticImageData;
