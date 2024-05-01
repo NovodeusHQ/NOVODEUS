@@ -186,6 +186,8 @@
   width: 100%;
   height: auto;
   padding: 3rem;
+  margin: 3rem 0rem 3rem 0rem;
+  background-color: #F8F9FF;
 }
 
 .cta {
@@ -206,29 +208,31 @@
 .rCtaContainer {
   width: 100%;
   height: auto;
-  padding: 6rem 3rem 6rem 3rem;
+  padding: 3rem;
+  background-color: #F8F9FF;
+  margin: 3rem 0rem 3rem 0rem;
 }
 
 .rcta {
   background-color: rgba(230, 233, 235, 1);
   border-radius: 20px;
-}
 
-.rcta h1 {
-  max-width: 80%;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: left;
-}
+  h1 {
+    max-width: 80%;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+  }
 
-.rcta p {
-  color: #131214;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-  max-width: 80%;
+  p {
+    color: #131214;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    max-width: 80%;
+  }
 }
 
 .reviewCard {
@@ -265,7 +269,7 @@
 }
 
 // == Mobile ==
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topBanner {
     padding: 3rem 0.5rem 3rem 0.5rem;
 
@@ -281,6 +285,11 @@
       // font-weight: 500;
       // line-height: 20px;
     }
+  }
+
+  .themeBtn {
+    font-size: $mobile-p;
+    line-height: $mobile-lh;
   }
 
   .whyChoose {
@@ -356,12 +365,17 @@
     }
   }
 
-  .rCtaContainer {
-    padding: 2rem 1.5rem 2rem 1.5rem;
+  .ctaContainer
+  {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+
   }
 
-  .ctaContainer {
-    padding: 1.5rem;
+  .rCtaContainer
+  {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 1rem 0rem 1rem 0rem;
   }
 
   .cta {
@@ -371,7 +385,23 @@
       // max-width: 100%;
       font-size: $mobile-h1;
       font-weight: 1000;
-      // font-weight: bolder;
+      line-height: $mobile-lh;
+    }
+  }
+
+
+  .rcta{
+    padding: 0.5rem;
+
+    h1 {
+      // max-width: 100%;
+      font-size: $mobile-h2;
+      font-weight: 1000;
+      line-height: $mobile-lh;
+    }
+
+    p {
+      font-size: $mobile-p;
       line-height: $mobile-lh;
     }
   }

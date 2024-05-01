@@ -45,7 +45,7 @@ const Projects = () => {
             <hgroup className='row mb-2 d-flex justify-content-center'>
                 {projectCategories.map((category, idx) => {
                     return (
-                        <h3 className={`${idx === activeCategory.id ? styles.active : ''} col-4 py-1 py-lg-3 active`} key={idx}
+                        <h3 className={`${idx === activeCategory.id ? styles.active : ''} col-4 py-1 py-lg-3 active d-flex align-items-center justify-content-center`} key={idx}
                         onClick={() => selectCategory(idx)}
                         >
                             {category.title}
@@ -54,14 +54,17 @@ const Projects = () => {
                 })}
             </hgroup>
 
-            <div className="row" data-aos="slide-right" data-aos-duration="600">
+            {/* <div className="row" data-aos="slide-right" data-aos-duration="600"> */}
+            <div className="row">
                 {
-                    projects.map((project, idx) => {
+                    activeCategory.projects.map((project, idx) => {
+                        const key = activeCategory.id.toString() + idx.toString();
+
                         return (
-                            <div key={idx} className='col-12 col-md-4 px-2 py-2 d-flex flex-column align-items-center align-items-md-start'>
+                            <div key={key} className='fade-in col-12 col-md-4 px-4 py-2 d-flex flex-column align-items-center align-items-md-start'>
                                 <Image src={project.img} alt={project.title} className='img-fluid' />
                                 <hgroup className='mt-3'>
-                                    <h5>{project.title}</h5>
+                                    <h4>{project.title}</h4>
                                     <p className='my-0'>{project.description}</p>
                                 </hgroup>
                             </div>

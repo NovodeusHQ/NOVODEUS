@@ -12,7 +12,7 @@ const CTA = () => {
     return (
         // <div className="container-fluid px-5">
             <div className={styles.rCtaContainer}>
-                <div className={`${styles.rcta} px-5 py-4 row`}>
+                <div className={`${styles.rcta} px-2 px-lg-5 py-2 py-lg-4 row`}>
                     <div className="col-12 col-md-6 d-flex flex-column">
                         <h1 className={`${satoshiBold.className} mb-2`}>
                             Inspired by our work? Interested in collaborating on your next project?
