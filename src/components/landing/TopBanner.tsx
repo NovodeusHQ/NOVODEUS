@@ -24,7 +24,7 @@ const TopBanner = () => {
             </div>
 
             <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                <Image src={TopBannerImage} alt="banner image" className='img-fluid' data-aos="zoom-in" data-aos-duration='1200' data-aos-delay='300' />
+                <Image src={TopBannerImage} alt="banner image" className='img-fluid' data-aos="zoom-in" data-aos-duration='1200' />
             </div>
         </div>
     )

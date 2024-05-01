@@ -382,8 +382,8 @@
     padding: 0.5rem;
 
     h1 {
-      // max-width: 100%;
-      font-size: $mobile-h1;
+      max-width: 100%;
+      font-size: 2.5rem;
       font-weight: 1000;
       line-height: $mobile-lh;
     }
@@ -394,7 +394,7 @@
     padding: 0.5rem;
 
     h1 {
-      // max-width: 100%;
+      max-width: 100%;
       font-size: $mobile-h2;
       font-weight: 1000;
       line-height: $mobile-lh;
@@ -403,6 +403,7 @@
     p {
       font-size: $mobile-p;
       line-height: $mobile-lh;
+      max-width: 100%;
     }
   }
 

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Logo from '../../assets/svgs/Logo.svg';
 import ImportBootstrap from '../reusables/ImportBoostrap';
+import Button from '../reusables/Button';
 
 const Header = () => {
     return (
@@ -30,7 +31,9 @@ const Header = () => {
                     </ul>
                     <span className="py-0">
                         <button type='button' className='btn contact-us-btn rounded-pill my-0'
-                        >Contact Us</button>
+                        >
+                            <Link href='/contact-us' className='no-link-underline text-white'>Contact Us</Link>
+                        </button>
                     </span>
                 </div>
             </div>

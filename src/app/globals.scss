@@ -32,7 +32,7 @@ p {
 }
 
 .contact-us-btn {
-  background-color: #7257ff !important;
+  background-color: $primary !important;
   color: white !important;
   opacity: 1;
   width: 147px;
@@ -187,7 +187,7 @@ h3 {
 }
 
 // == Mobile ==
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   html,
   body {
     overflow-x: hidden !important;
@@ -205,15 +205,19 @@ h3 {
 }
 
 // == Animations ==
+.zoom-on-hover:hover {
+  scale: 1.05;
+}
+
 .fade-in {
   animation-name: fadeIn;
-  animation-duration: 0.2s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in;
 }
 
 @keyframes fadeIn {
   0% {
-    transform: scale(0.2);
+    transform: scale(0.5);
   }
   100% {
     transform: scale(1);

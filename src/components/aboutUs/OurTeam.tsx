@@ -26,12 +26,12 @@ const OurTeam = () => {
 
   return (
     <div className={styles.ourTeam}>
-        <h3 className='my-0'>Our Team</h3>
-        <div className="d-flex flex-row justify-content-center">
+        <h3 className='my-1 my-lg-2'>Our Team</h3>
+        <div className="row lg-d-flex flex-row justify-content-center">
             {
                 teamMembers.map((member, idx) => {
                     return (
-                        <div key={idx} className={ `${styles.teamMember} mx-2`}>
+                        <div key={idx} className={ `${styles.teamMember} col-12 col-lg-3 px-0 mx-2 my-2 my-lg-0`} data-aos="flip-right" data-aos-duration="500">
                             <Image src={member.img} alt={member.name} className='img-fluid'/>
                             <hgroup className='text-center'>
                                 <h5>{member.name}</h5>

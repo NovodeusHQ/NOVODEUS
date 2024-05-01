@@ -62,7 +62,7 @@ const Projects = () => {
 
                         return (
                             <div key={key} className='fade-in col-12 col-md-4 px-4 py-2 d-flex flex-column align-items-center align-items-md-start'>
-                                <Image src={project.img} alt={project.title} className='img-fluid' />
+                                <Image src={project.img} alt={project.title} className='img-fluid zoom-on-hover' loading="eager" />
                                 <hgroup className='mt-3'>
                                     <h4>{project.title}</h4>
                                     <p className='my-0'>{project.description}</p>
