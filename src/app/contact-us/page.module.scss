@@ -23,20 +23,20 @@
 .topBannerContent {
   color: white;
   max-width: 90%;
-}
 
-.topBannerContent h1 {
-  font-size: 128px;
-  font-weight: 900;
-  line-height: 153.6px;
-  text-align: left;
-}
+  h1 {
+    font-size: 128px;
+    font-weight: 900;
+    line-height: 153.6px;
+    text-align: left;
+  }
 
-.topBannerContent h2 {
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 76.8px;
-  text-align: left;
+  h2 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.8px;
+    text-align: left;
+  }
 }
 
 .hello {
@@ -176,7 +176,7 @@
   }
 
   .topBannerContent {
-    width: 100%;
+    max-width: 100%;
 
     h1 {
       font-size: $mobile-h1;
