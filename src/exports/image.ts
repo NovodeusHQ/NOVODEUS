@@ -19,6 +19,11 @@ import TeamMember1 from "../assets/svgs/TeamMember1.svg";
 import TeamMember2 from "../assets/svgs/TeamMember2.svg";
 import TeamMember3 from "../assets/svgs/TeamMember3.svg";
 import PlaceholderProject from "../assets/svgs/PlacaholderProject.svg";
+import ProjectCoverPlaceholder from "../assets/svgs/ProjectCoverPlaceholder.svg";
+import ProjectWhatWeDidPlaceholder from "../assets/svgs/ProjectWhatWeDidPlaceholder.svg";
+import ProjectSolutionPlaceholder from "../assets/svgs/ProjectSolutionPlaceholder.svg";
+import ProjectSuggestionThumbnail from "../assets/svgs/ProjectSuggestionThumbnail.svg";
+
 
 // Icons
 import whyChoose from "../assets/svgs/icons/whyChooseIcon.svg";
@@ -58,7 +63,10 @@ export const images = {
     TeamMember2,
     TeamMember3,
     PlaceholderProject,
-
+    ProjectCoverPlaceholder,
+    ProjectWhatWeDidPlaceholder,
+    ProjectSolutionPlaceholder,
+    ProjectSuggestionThumbnail,
 
 
 }

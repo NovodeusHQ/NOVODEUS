@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import styles from '../../app/our-projects/page.module.scss';
 import { IProject, IProjectCategory } from '@/types/dataObjs';
 import Image from 'next/image';
+import Link from 'next/link';
 import { images } from '@/exports/image';
 
 const Projects = () => {
@@ -41,12 +42,12 @@ const Projects = () => {
     };
 
     return (
-        <div className={`${styles.projects} px-3 px-lg-5 py-5`}>
-            <hgroup className='row mb-2 d-flex justify-content-center'>
+        <div className={`${styles.projects} px-0 px-lg-5 py-5`}>
+            <hgroup className='row mb-2 mx-0'>
                 {projectCategories.map((category, idx) => {
                     return (
-                        <h3 className={`${idx === activeCategory.id ? styles.active : ''} col-4 py-1 py-lg-3 active d-flex align-items-center justify-content-center`} key={idx}
-                        onClick={() => selectCategory(idx)}
+                        <h3 className={`${idx === activeCategory.id ? styles.active : ''} col-4 py-1 py-lg-3 px-0 d-flex align-items-center justify-content-center`} key={idx}
+                            onClick={() => selectCategory(idx)}
                         >
                             {category.title}
                         </h3>
@@ -62,10 +63,13 @@ const Projects = () => {
 
                         return (
                             <div key={key} className='fade-in col-12 col-md-4 px-4 py-2 d-flex flex-column align-items-center align-items-md-start'>
-                                <Image src={project.img} alt={project.title} className='img-fluid zoom-on-hover' loading="eager" />
+                                <Link href="/our-projects/spraay">
+                                    <Image src={project.img} alt={project.title} className='img-fluid zoom-on-hover' loading="eager" />
+                                </Link>
+
                                 <hgroup className='mt-3'>
-                                    <h4>{project.title}</h4>
-                                    <p className='my-0'>{project.description}</p>
+                                    <h4 className='text-black'>{project.title}</h4>
+                                    <p className='my-0 text-muted'>{project.description}</p>
                                 </hgroup>
                             </div>
                         )

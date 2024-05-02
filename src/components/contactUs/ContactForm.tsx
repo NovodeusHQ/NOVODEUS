@@ -56,7 +56,7 @@ const ContactForm = () => {
 
       </div>
 
-      <div className="col-12 col-md-6 mt-5 mt-md-0">
+      <div className="col-12 col-md-6 mt-5 mt-md-0 text-muted">
         <p>Our team comprises seasoned product managers, creative designers, and adept developers, crafting digital products with expertise and creativity.</p>
 
         <h3>Select Service <span>(You can choose more than one)</span></h3>
