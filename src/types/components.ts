@@ -17,4 +17,5 @@ export interface IHeadedList {
 
 export interface ITestimonial {
     testimonial: IClientTestimonial;
+    active: boolean;
 }

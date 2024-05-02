@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React from 'react';
 import { IButton } from '@/types/components';
 import styles from "../../app/contact-us/page.module.scss";
 
@@ -7,7 +9,7 @@ const ServiceButton: React.FC<IButton> = ({
     className
 }) => {
   return (
-    <button className={`${styles.serviceButton} ${className} btn rounded-pill`}
+    <button type="button" className={`${styles.serviceButton} ${className} btn rounded-pill`}
     >
         {text}
     </button>

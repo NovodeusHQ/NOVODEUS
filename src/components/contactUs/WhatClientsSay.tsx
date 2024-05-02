@@ -45,26 +45,9 @@ const WhatClientsSay = () => {
                 </div>
 
                 <div className="carousel-inner">
-                    {/* <div className="carousel-item active">
-                        <div className='container-fluid pb-5 d-flex flex-column justify-content-center align-items-center'>
-                            <div className={`${styles.clientAvatar} text-center mb-2`}>
-                                <Image src={images.ClientAvatar} alt="client avatar" />
-                                <p>Y</p>
-                            </div>
-
-                            <hgroup className={styles.clientName}>
-                                <h4></h4>
-                                <p className='text-center'></p>
-                            </hgroup>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        Slide 2
-                    </div> */}
-
                     {testimonials.map((testimonial, idx) => {
                         return (
-                            <Testimonial testimonial={testimonial} key={idx} />
+                            <Testimonial testimonial={testimonial} key={idx} active={idx === 0}/>
                         )
                     })}
                 </div>
