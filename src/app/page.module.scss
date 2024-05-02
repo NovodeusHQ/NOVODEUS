@@ -59,14 +59,6 @@
   margin: 4.5rem 5.5rem 4.5rem 5.5rem;
 }
 
-.themeBtn {
-  /* background-color: #7257ff !important; */
-  color: white !important;
-  opacity: 1;
-  line-height: 16px;
-  padding: 1rem 2.5rem 1rem 2.5rem;
-}
-
 .divider {
   display: flex;
   align-items: center;
@@ -285,11 +277,6 @@
       // font-weight: 500;
       // line-height: 20px;
     }
-  }
-
-  .themeBtn {
-    font-size: $mobile-p;
-    line-height: $mobile-lh;
   }
 
   .whyChoose {

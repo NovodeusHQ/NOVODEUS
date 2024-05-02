@@ -46,73 +46,81 @@
 .midSection {
   width: 100%;
   height: auto;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    padding: 3rem 6rem 3rem 6rem;
+  }
 }
 
-.midSection h1 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: left;
-}
-
-.midSection p {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 32px;
-  text-align: center;
-
-  padding: 15px 96px 15px 96px;
+.midTopText {
+  margin: 0px !important;
 }
 
 .contactForm {
   background-color: rgba(244, 246, 247, 1);
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+
+  input {
+    background: transparent;
+    border: solid 1.5px rgba(230, 233, 235, 1);
+    border-radius: 9px;
+    padding: 0.6em 1em;
+    width: 100%;
+  }
+
+  textarea {
+    background: #ffffff;
+    border: solid 1.5px rgba(230, 233, 235, 1);
+    border-radius: 9px;
+    padding: 0.6em 1em;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+  }
+
+  h3 span {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    padding: 0px !important;
+  }
 }
 
-.contactForm input {
-  background: transparent;
-  border: solid 1.5px rgba(230, 233, 235, 1);
-  border-radius: 9px;
-  padding: 0.6em 1em;
-  width: 100%;
-}
-
-.contactForm textarea {
-  background: #ffffff;
-  border: solid 1.5px rgba(230, 233, 235, 1);
-  border-radius: 9px;
-  padding: 0.6em 1em;
-  width: 100%;
-}
-
-.contactForm h3 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38.4px;
-  text-align: left;
-}
-
-.contactForm h3 span {
-  font-size: 18px !important;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-}
-
-.contactForm p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: left;
-  padding: 0px !important;
-}
-
-.leftColumn {
-  display: grid;
-}
+// .leftColumn {
+//   display: grid;
+// }
 
 .contactForm .leftColumn .trustedBy {
   align-self: end;
   justify-self: start;
+}
+
+.selectServices {
+  border-right: 2px solid $second-light;
 }
 
 .submitBtn {
@@ -125,25 +133,35 @@
 }
 
 .serviceButton {
-  background-color: #daddde;
-  color: #898d8f !important;
+  background-color: $light;
+  color: $muted !important;
   opacity: 1;
   line-height: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
   padding: 16px 32px 16px 32px;
 }
 
-.whatClientsSay h3 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: center;
+.serviceButton:hover {
+  background-color: $primary !important;
+  color: $white !important;
 }
 
-.whatClientsSay p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: center;
+.whatClientsSay {
+  h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
 }
 
 .clientAvatar p {
@@ -186,6 +204,64 @@
     h2 {
       font-size: $mobile-h2;
       line-height: $mobile-lh;
+    }
+  }
+
+  .midSection {
+    p {
+      font-size: $mobile-p;
+      padding: 1.5rem;
+    }
+  }
+
+  .selectServices {
+    border: 0px;
+  }
+
+  .contactForm {
+    padding: 1rem 1rem 0.5rem 1rem;
+
+    h3 {
+      font-size: $mobile-h3;
+      line-height: $mobile-lh;
+
+      span {
+        font-size: $mobile-p;
+      }
+    }
+  }
+
+  .serviceButton {
+    font-size: $mobile-p;
+    line-height: $mobile-p;
+  }
+
+  .whatClientsSay {
+    margin-top: 2rem;
+
+    h3 {
+      font-size: $mobile-h3;
+      line-height: $mobile-lh;
+    }
+
+    p {
+      font-size: $mobile-p;
+    }
+  }
+
+  .clientName {
+    h4 {
+      font-size: $mobile-h4;
+      line-height: $mobile-lh;
+    }
+    p {
+      font-size: $mobile-p;
+    }
+  }
+
+  .clientAvatar {
+    p {
+      font-size: $mobile-p;
     }
   }
 }

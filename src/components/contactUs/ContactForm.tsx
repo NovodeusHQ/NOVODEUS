@@ -30,31 +30,30 @@ const ContactForm = () => {
   const budgets: Array<string> = ["Less than NGN 1m", "NGN 1m-4m", "NGN 4m-10m", "More than NGN 10m"]
 
   return (
-    <form className={`${styles.contactForm} row mx-5 pt-5 pb-2`}>
+    <form className={`${styles.contactForm} row`}>
       <div className={`${styles.leftColumn} col-12 col-md-6`}>
-        <h3 className='mx-1 mb-5'>Let&apos;s talk about your idea</h3>
+        <h3 className='mx-1 mb-4 mb-md-5'>Let&apos;s talk about your idea</h3>
 
-        <h3 className='mx-1'>Select Service <span>(You can choose more than one)</span></h3>
-        <div className=''>
-          {services.map((service, idx) => {
-            return <ServiceButton text={service} key={idx}
-              className="mx-1 my-1" />
-          })}</div>
-
-        <h3 className='mt-5 mx-1'>Project Budget <span>(in NGN)</span></h3>
-        <div className=''>
-          {budgets.map((service, idx) => {
-            return <ServiceButton text={service} key={idx}
-              // className={`${!(idx === 0) ? 'ms-1' : ''} ${!(idx === services.length - 1) ? 'me-1' : ''} my-1`}
-              className='mx-1 my-1'
-            />
-          })}</div>
-
-          <div className={`${styles.trustedBy}`}>
-            <p>Trusted By</p>
-            <Image src={images.FibreOneDim} alt="Fibre One" className='me-5' />
-            <Image src={images.SpraayDim} alt="Spraay" />
+        <div className={styles.selectServices}>
+          <h3 className='mx-1'>Select Service <span>(You can choose more than one)</span></h3>
+          <div className='pb-4'>
+            {services.map((service, idx) => {
+              return <ServiceButton text={service} key={idx}
+                className="mx-1 my-1" />
+            })}
           </div>
+
+          <h3 className='mt-1 mx-1'>Project Budget <span>(in NGN)</span></h3>
+          <div className=''>
+            {budgets.map((service, idx) => {
+              return <ServiceButton text={service} key={idx}
+                // className={`${!(idx === 0) ? 'ms-1' : ''} ${!(idx === services.length - 1) ? 'me-1' : ''} my-1`}
+                className='mx-1 my-1'
+              />
+            })}
+          </div>
+        </div>
+
       </div>
 
       <div className="col-12 col-md-6 mt-5 mt-md-0">
@@ -109,13 +108,17 @@ const ContactForm = () => {
             />
           </div>
 
-          <div className='my-5'>
+          <div className='mt-4 mb-5 my-md-5'>
             <SubmitButton />
           </div>
         </aside>
-
       </div>
 
+      <div className={`${styles.trustedBy}`}>
+        <p>Trusted By</p>
+        <Image src={images.FibreOneDim} alt="Fibre One" className='me-5' />
+        <Image src={images.SpraayDim} alt="Spraay" />
+      </div>
     </ form>
   )
 }

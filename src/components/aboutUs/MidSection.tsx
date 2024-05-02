@@ -26,7 +26,7 @@ const MidSection = () => {
     ];
 
     return (
-        <div className='px-2 py-3 px-lg-5 py-lg-5'>
+        <div className='px-3 py-3 px-lg-5 py-lg-5'>
             <hgroup className={styles.midHeader}>
                 <h3 className='mb-1'>Who We are</h3>
                 <p>We are innovators. We are creators. We are brand architects. Our aspiration is to craft the quintessential digital experience, resonating with users, and translating clients&apos; visions into captivating realities.</p>

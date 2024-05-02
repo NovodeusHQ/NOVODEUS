@@ -6,7 +6,7 @@ const MidSection = () => {
 
     return (
         <div className={styles.midSection}>
-            <p>
+            <p className={styles.midTopText}>
                 We&apos;re here to understand your project&apos;s unique needs and create tailored solutions that bring your vision to reality. Please fill out the form below, and let&apos;s embark on this transformative journey together.
             </p>
 

@@ -31,3 +31,10 @@ export interface IListItem {
     paragraph: string;
     bulletImage: string | StaticImageData;
 }
+
+export interface IClientTestimonial {
+    clientName: string;
+    clientRole: string;
+    clientTestimony: string;
+    clientAvatar: string | StaticImageData;
+}

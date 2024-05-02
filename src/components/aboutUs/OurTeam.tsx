@@ -31,7 +31,7 @@ const OurTeam = () => {
             {
                 teamMembers.map((member, idx) => {
                     return (
-                        <div key={idx} className={ `${styles.teamMember} col-12 col-lg-3 px-0 mx-2 my-2 my-lg-0`} data-aos="flip-right" data-aos-duration="500">
+                        <div key={idx} className={ `${styles.teamMember} col-12 col-md-3 px-0 mx-2 my-2 my-lg-0 d-flex flex-column align-items-center`} data-aos="flip-right" data-aos-duration="500">
                             <Image src={member.img} alt={member.name} className='img-fluid'/>
                             <hgroup className='text-center'>
                                 <h5>{member.name}</h5>

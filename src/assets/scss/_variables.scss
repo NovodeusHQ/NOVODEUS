@@ -3,6 +3,8 @@ $white: #ffffff;
 $lightBlue: #0066FF;
 $transBlue: #E4EFFF;
 $muted: #898D8F;
+$light: #DADDDE;
+$second-light: #E6E9EB;
 $lightOrange: hsl(38, 100%, 96%);
 $sidebar-width: 300px;
 $textBlack: #0F1A2A;
@@ -32,6 +34,7 @@ $theme-colors: (
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
+  // sm: 385px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
@@ -70,3 +73,4 @@ $mobile-h3: 1.25rem;
 $mobile-h4: 0.9rem;
 $mobile-p: 0.9rem;
 $mobile-lh: 1.2;
+$mobile-lh-md: 1.5;

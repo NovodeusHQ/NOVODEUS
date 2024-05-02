@@ -81,10 +81,9 @@
 }
 
 .teamMember {
-  background-color: #eff6f3;
-  color: black;
-
   hgroup {
+    background-color: #eff6f3;
+    color: black;
     width: 100%;
     padding: 1rem 0rem 1rem 0rem;
 
@@ -145,7 +144,7 @@
 
     p {
       font-size: $mobile-p;
-      line-height: $mobile-lh;
+      // line-height: $mobile-lh;
     }
   }
 
@@ -160,7 +159,7 @@
 
     p {
       font-size: $mobile-p;
-      line-height: $mobile-lh;
+      // line-height: $mobile-lh-md;
     }
   }
 
@@ -177,7 +176,7 @@
 
     p {
       font-size: $mobile-p;
-      line-height: $mobile-p;
+      // line-height: $mobile-lh-md;
     }
   }
 
@@ -188,14 +187,17 @@
     }
 
     .teamMember {
-      h5 {
-        font-size: $mobile-h4;
-        line-height: $mobile-lh;
-      }
+      hgroup {
+        max-width: 324px;
+        h5 {
+          font-size: $mobile-h4;
+          line-height: $mobile-lh;
+        }
 
-      p {
-        font-size: $mobile-p;
-        line-height: $mobile-lh;
+        p {
+          font-size: $mobile-p;
+          line-height: $mobile-lh;
+        }
       }
     }
   }

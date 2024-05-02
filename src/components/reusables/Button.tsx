@@ -8,7 +8,7 @@ const Button: React.FC<IButton> = ({
     padding
 }) => {
   return (
-    <button className={`${styles.themeBtn} ${className} btn btn-primary rounded-pill`}
+    <button className={`${className} themeBtn btn btn-primary rounded-pill`}
         style={{ paddingLeft: padding, paddingRight: padding }}
     >
         {text}
