@@ -1,4 +1,4 @@
-import { IListItem, IReview, IClientTestimonial } from "./dataObjs";
+import { IListItem, IReview, IClientTestimonial, ISuggestedProjectDetails } from "./dataObjs";
 import { StaticImageData } from 'next/image';
 
 export interface IButton {
@@ -9,6 +9,7 @@ export interface IButton {
 
 export interface IReviewCard {
     review: IReview;
+    className?: string;
 }
 
 export interface IHeadedList {
@@ -18,4 +19,8 @@ export interface IHeadedList {
 export interface ITestimonial {
     testimonial: IClientTestimonial;
     active: boolean;
+}
+
+export interface ISuggestedProject {
+    project: ISuggestedProjectDetails;
 }

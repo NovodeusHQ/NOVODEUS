@@ -40,6 +40,7 @@ import instacart from "../assets/svgs/icons/instacart.svg";
 import coinbase from "../assets/svgs/icons/coinbase.svg";
 import sliderPrev from "../assets/svgs/icons/sliderPrev.svg";
 import sliderNext from "../assets/svgs/icons/sliderNext.svg";
+import pointerRight from "../assets/svgs/icons/pointerRight.svg";
 
 
 export const images = {
@@ -86,6 +87,7 @@ export const icons = {
     coinbase,
     sliderPrev,
     sliderNext,
+    pointerRight,
 
 
 }

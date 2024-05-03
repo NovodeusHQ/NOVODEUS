@@ -12,8 +12,8 @@
     line-height: 38.4px;
     text-align: center;
     background-color: $second-light;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     pointer-events: none;
   }
 
@@ -26,21 +26,140 @@
 }
 
 .midSection {
-    h3 {
-        text-align: start;
-    }
+  h1 {
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 153.6px;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    padding: 12px 0px 12px 0px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    white-space: wrap;
+    color: $muted;
+  }
 }
 
-@media screen and (max-width: 768px) {
-    .midSection {
-        hgroup {
-            h3 {
-                text-align: center;
-            }
+.thirdSection {
+  padding: 3rem;
 
-            p {
-                text-align: center;
-            }
-        }
+  h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    text-align: left;
+    margin-bottom: 2.5rem;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+}
+
+.rightPointerButton {
+  width: 92px;
+  height: 48px;
+}
+
+.rightPointerButton::after {
+  content: url(../../../assets/svgs/icons/pointerRight.svg);
+}
+
+.rightPointerButton:hover {
+  background-color: $primary;
+}
+
+.rightPointerButton:hover::after {
+  content: url(../../../assets/svgs/icons/pointerRightWhite.svg);
+}
+
+.solutionImages {
+  max-width: 672.5px !important;
+  max-height: 100px;
+  border: 1px solid red;
+}
+
+// == Mobile ==
+@media screen and (max-width: 768px) {
+  .topSection {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+
+    button {
+      width: 120px;
+      height: 42px;
+      padding: 3px 18px 2px 18px;
+      font-size: 20px;
     }
+
+    h1 {
+      font-size: $mobile-h1;
+    }
+  }
+
+  .midSection {
+    h3 {
+      padding: 0.5rem 0rem 0.5rem 0rem;
+      font-size: $mobile-h3;
+    }
+
+    p {
+      font-size: $mobile-p;
+    }
+
+    hgroup {
+      h3 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  .thirdSection {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+
+    h2 {
+        font-size: $mobile-h2;
+        line-height: $mobile-lh;
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-size: $mobile-h3;
+    }
+
+    p {
+        font-size: $mobile-p;
+    }
+  }
 }

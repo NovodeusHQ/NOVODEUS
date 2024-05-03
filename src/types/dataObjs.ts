@@ -38,3 +38,9 @@ export interface IClientTestimonial {
     clientTestimony: string;
     clientAvatar: string | StaticImageData;
 }
+
+export interface ISuggestedProjectDetails {
+    title: string;
+    category: string;
+    img: string | StaticImageData;
+}

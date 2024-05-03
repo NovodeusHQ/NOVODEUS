@@ -62,12 +62,12 @@ const Projects = () => {
                         const key = activeCategory.id.toString() + idx.toString();
 
                         return (
-                            <div key={key} className='fade-in col-12 col-md-4 px-4 py-2 d-flex flex-column align-items-center align-items-md-start'>
+                            <div key={key} className='fade-in col-12 col-md-4 px-4 py-4 d-flex flex-column align-items-center align-items-md-start'>
                                 <Link href="/our-projects/spraay">
                                     <Image src={project.img} alt={project.title} className='img-fluid zoom-on-hover' loading="eager" />
                                 </Link>
 
-                                <hgroup className='mt-3'>
+                                <hgroup className={`${styles.projectDetails} mt-3`}>
                                     <h4 className='text-black'>{project.title}</h4>
                                     <p className='my-0 text-muted'>{project.description}</p>
                                 </hgroup>
