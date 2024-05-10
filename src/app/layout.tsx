@@ -9,7 +9,7 @@ import AOSAnimation from "@/utils/AosInit";
 
 import localFont from "@next/font/local";
 
-const satoshi = localFont({ src: "../assets/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff" });
+const satoshi = localFont({ src: "../assets/fonts/pp-neue-montreal-cdnfonts/ppneuemontreal-medium.otf" });
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

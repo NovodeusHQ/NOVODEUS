@@ -161,8 +161,8 @@
 
   p {
     font-size: 18px;
-    font-weight: 700;
-    line-height: 18px;
+    font-weight: 500;
+    line-height: 21.6px;
     text-align: left;
   }
 
@@ -179,7 +179,7 @@
   height: auto;
   padding: 3rem;
   margin: 3rem 0rem 3rem 0rem;
-  background-color: #F8F9FF;
+  background-color: #f8f9ff;
 }
 
 .cta {
@@ -190,7 +190,7 @@
   h1 {
     max-width: 90%;
     font-size: 64px;
-    /* font-weight: 900; */
+    font-weight: 900;
     // font-weight: bolder;
     line-height: 76.8px;
     text-align: left;
@@ -201,7 +201,7 @@
   width: 100%;
   height: auto;
   padding: 3rem;
-  background-color: #F8F9FF;
+  background-color: #f8f9ff;
   margin: 3rem 0rem 3rem 0rem;
 }
 
@@ -352,15 +352,12 @@
     }
   }
 
-  .ctaContainer
-  {
+  .ctaContainer {
     padding: 1rem 2rem 1rem 2rem;
     margin: 1rem 0rem 1rem 0rem;
-
   }
 
-  .rCtaContainer
-  {
+  .rCtaContainer {
     padding: 1rem 2rem 1rem 2rem;
     margin: 1rem 0rem 1rem 0rem;
   }
@@ -376,8 +373,7 @@
     }
   }
 
-
-  .rcta{
+  .rcta {
     padding: 0.5rem;
 
     h1 {
