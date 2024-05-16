@@ -70,6 +70,11 @@
   }
 }
 
+.projectDetails {
+  max-width: 374px;
+}
+
+// == Mobile ==
 @media screen and (max-width: 768px) {
   .topBanner {
     padding: 3rem 1.8rem 3rem 1.8rem;
@@ -104,9 +109,5 @@
         line-height: $mobile-lh;
       }
     }
-  }
-
-  .projectDetails {
-    max-width: 374px;
   }
 }

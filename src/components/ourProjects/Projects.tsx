@@ -62,7 +62,7 @@ const Projects = () => {
                         const key = activeCategory.id.toString() + idx.toString();
 
                         return (
-                            <div key={key} className='fade-in col-12 col-md-4 px-4 py-4 d-flex flex-column align-items-center align-items-md-start'>
+                            <div key={key} className='fade-in col-12 col-md-4 px-4 py-4 d-flex flex-column align-items-center'>
                                 <Link href="/our-projects/spraay">
                                     <Image src={project.img} alt={project.title} className='img-fluid zoom-on-hover' loading="eager" />
                                 </Link>
