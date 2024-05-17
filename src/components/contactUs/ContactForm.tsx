@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormStatus } from 'react-dom';
 import styles from '../../app/contact-us/page.module.scss';
 import ServiceButton from '../reusables/ServiceButton';
@@ -29,6 +29,24 @@ const ContactForm = () => {
 
   const budgets: Array<string> = ["Less than NGN 1m", "NGN 1m-4m", "NGN 4m-10m", "More than NGN 10m"]
 
+  const [selectedServices, setSelectedServices] = useState<Array<string>>([]);
+  const [selectedBudget, setSelectedBudget] = useState<string>("");
+
+
+  const updateSelectedServices = (selectedService: string) => {
+    if (selectedServices.includes(selectedService)) {
+      setSelectedServices((prev) => {
+        return prev.filter(item => item !== selectedService && item !== "ALL");
+      })
+    } else if (selectedService === "ALL") {
+      setSelectedServices(services);
+    } else {
+      setSelectedServices((prev) => {
+        return [...prev, selectedService];
+      });
+    }
+  }
+
   return (
     <form className={`${styles.contactForm} row`}>
       <div className={`${styles.leftColumn} col-12 col-md-6`}>
@@ -38,8 +56,13 @@ const ContactForm = () => {
           <h3 className='mx-1'>Select Service <span>(You can choose more than one)</span></h3>
           <div className='pb-4'>
             {services.map((service, idx) => {
+
               return <ServiceButton text={service} key={idx}
-                className="mx-1 my-1" />
+                className="mx-1 my-1"
+                service={service}
+                setService={updateSelectedServices}
+                active={selectedServices.includes(service)}
+              />
             })}
           </div>
 
@@ -49,6 +72,9 @@ const ContactForm = () => {
               return <ServiceButton text={service} key={idx}
                 // className={`${!(idx === 0) ? 'ms-1' : ''} ${!(idx === services.length - 1) ? 'me-1' : ''} my-1`}
                 className='mx-1 my-1'
+                service={service}
+                setService={setSelectedBudget}
+                active={selectedBudget === service}
               />
             })}
           </div>

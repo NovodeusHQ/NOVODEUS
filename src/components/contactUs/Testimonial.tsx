@@ -8,7 +8,7 @@ const Testimonial: React.FC<ITestimonial> = ({
     active
 }) => {
     return (
-        <div className={`carousel-item ${active ? 'active' : ''}`}>
+        <div className={`carousel-item ${active ? 'active' : ''}`} data-bs-interval="2000">
             <div className='container-fluid pb-5 d-flex flex-column justify-content-center align-items-center'>
                 <div className={`${styles.clientAvatar} text-center mb-2`}>
                     <Image src={testimonial.clientAvatar} alt="client avatar" />

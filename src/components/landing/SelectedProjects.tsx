@@ -17,12 +17,14 @@ const SelectedProjects = () => {
         <div className={`${styles.selectedProjects} container-fluid py-3 px-3 py-lg-5 px-lg-5`}>
             <h2 className='mb-3'>Selected Projects</h2>
 
-            <div className="row d-flex justify-content-center justify-content-lg-between">
+            <div className="selected-project-container">
                 {projects.map((project, idx) => {
+                    const even = idx % 2 === 0;
+
                     return (
-                        <div className="col-12 col-md-6 my-2 px-2" data-aos="zoom-out" data-aos-ease="ease-out" data-aos-duration="1200"  key={idx}>
+                        <div className={`my-2 selected-project d-flex ${even ? 'justify-content-end pe-2' : 'justify-content-start ps-2'}`} data-aos="zoom-out" data-aos-ease="ease-out" data-aos-duration="1200" key={idx}>
                             <Link href="#">
-                                <Image src={project} alt={`project-${idx}`} className='img-fluid' loading='eager'/>
+                                <Image src={project} alt={`project-${idx}`} className='img-fluid' loading='eager' />
                             </Link>
                         </div>
                     )
