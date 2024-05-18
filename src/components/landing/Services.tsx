@@ -1,8 +1,15 @@
+'use client'
+
 import React from 'react';
 import styles from "../../app/page.module.scss";
 import Image from 'next/image';
 import { icons } from '@/exports/image';
 import Button from '../reusables/Button';
+
+import CraftingBrands from './assets/CraftingBrands';
+import UIUX from './assets/UIUX';
+import Development from './assets/Development';
+import ModernProducts from './assets/ModernProducts';
 
 const Services = () => {
     return (
@@ -21,8 +28,9 @@ const Services = () => {
 
             <div className="col-12 col-lg-7">
                 <div className="row">
-                    <div className={`${styles.craftingBrands} ${styles.serviceCard} col-6`}>
-                        <Image src={icons.craftingBrands} alt="crafting brands icons" className='mb-4' />
+                    <div className={`${styles.serviceCard} col-6`}>
+                        {/* <Image src={icons.craftingBrands} alt="crafting brands icons" className='mb-4' color='#FFFFFF'/> */}
+                        <CraftingBrands className='mb-4' />
                         <h3>Crafting Brands</h3>
 
                         <p className=''>
@@ -34,7 +42,8 @@ const Services = () => {
                     </div>
 
                     <div className={`${styles.serviceCard} col-6`}>
-                        <Image src={icons.UIUX} alt="crafting brands icons" className='mb-4' />
+                        {/* <Image src={icons.UIUX} alt="crafting brands icons" className='mb-4' /> */}
+                        <UIUX className="mb-4" />
                         <h3>UI/UX</h3>
 
                         <p className=''>
@@ -48,7 +57,8 @@ const Services = () => {
                     </div>
 
                     <div className={`${styles.serviceCard} col-6`}>
-                        <Image src={icons.development} alt="crafting brands icons" className='mb-4' />
+                        {/* <Image src={icons.development} alt="crafting brands icons" className='mb-4' /> */}
+                        <Development className="mb-4" />
                         <h3>Development</h3>
 
                         <p className=''>
@@ -62,7 +72,8 @@ const Services = () => {
                     </div>
 
                     <div className={`${styles.serviceCard} col-6`}>
-                        <Image src={icons.modernProducts} alt="crafting brands icons" className='mb-4' />
+                        {/* <Image src={icons.modernProducts} alt="crafting brands icons" className='mb-4' /> */}
+                        <ModernProducts className="mb-4" />
                         <h3>Modern Products</h3>
 
                         <p className=''>

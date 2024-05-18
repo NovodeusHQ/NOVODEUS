@@ -150,14 +150,16 @@
   color: white;
 }
 
-.craftingBrands {
+.serviceCard:hover {
   background-color: rgba(255, 207, 0, 1);
-  color: black;
+  color: #131214;
 }
 
 .serviceCard {
   padding: 3rem 2rem 3rem 2rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: color 0.3s;
+  color: white;
 
   p {
     font-size: 18px;

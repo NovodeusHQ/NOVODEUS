@@ -243,12 +243,11 @@ h3 {
 
   .selected-project {
     max-width: 100%;
-    flex: 1 1 100%;
     box-sizing: border-box;
   }
 
   .selected-project-container {
-    display: flex;
+    display: block;
     flex-wrap: nowrap;
   }
 }

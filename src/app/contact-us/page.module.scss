@@ -143,11 +143,6 @@
   padding: 16px 32px 16px 32px;
 }
 
-.serviceButton:hover {
-  background-color: $primary !important;
-  color: $white !important;
-}
-
 .serviceButtonActive {
   background-color: $primary !important;
   color: $white !important;
@@ -190,6 +185,13 @@
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .serviceButton:hover {
+    background-color: $primary;
+    color: $white !important;
+  }
 }
 
 // == Mobile  ==
@@ -239,6 +241,11 @@
   .serviceButton {
     font-size: $mobile-p;
     line-height: $mobile-p;
+  }
+
+  .serviceButton:hover {
+    background-color: $light ;
+    // color: $muted !important;
   }
 
   .whatClientsSay {

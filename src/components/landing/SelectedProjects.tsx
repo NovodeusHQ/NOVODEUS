@@ -22,7 +22,7 @@ const SelectedProjects = () => {
                     const even = idx % 2 === 0;
 
                     return (
-                        <div className={`my-2 selected-project d-flex ${even ? 'justify-content-end pe-2' : 'justify-content-start ps-2'}`} data-aos="zoom-out" data-aos-ease="ease-out" data-aos-duration="1200" key={idx}>
+                        <div className={`my-3 my-md-2 selected-project d-flex ${even ? 'justify-content-md-end pe-md-2' : 'justify-content-md-start ps-md-2'}`} data-aos="zoom-out" data-aos-ease="ease-out" data-aos-duration="1200" key={idx}>
                             <Link href="#">
                                 <Image src={project} alt={`project-${idx}`} className='img-fluid' loading='eager' />
                             </Link>
