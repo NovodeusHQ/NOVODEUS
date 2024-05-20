@@ -150,9 +150,10 @@
   color: white;
 }
 
-.serviceCard:hover {
-  background-color: rgba(255, 207, 0, 1);
-  color: #131214;
+// .serviceCard:hover
+.activeCard {
+  background-color: rgba(255, 207, 0, 1) !important;
+  color: #131214 !important;
 }
 
 .serviceCard {

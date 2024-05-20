@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "../../app/page.module.scss";
 import Image from 'next/image';
 import { icons } from '@/exports/image';
@@ -12,6 +12,38 @@ import Development from './assets/Development';
 import ModernProducts from './assets/ModernProducts';
 
 const Services = () => {
+
+    const [activeCard, setActiveCard] = useState(0);
+
+    const handleMouseEnter = (index: number) => {
+        setActiveCard(index);
+    };
+
+    const cards = [
+        {
+            component: <CraftingBrands className="mb-4" />,
+            title: "Crafting Brands",
+            description: "Brand story <br /> Visual identity <br /> Brand guidelines",
+        },
+        {
+            component: <UIUX className="mb-4" />,
+            title: "UI/UX",
+            description:
+                "User Interface Design <br /> User Experience Design <br /> Interaction Design <br /> UX Writing <br /> Research <br /> Design System",
+        },
+        {
+            component: <Development className="mb-4" />,
+            title: "Development",
+            description:
+                "Mobile App Development <br /> Websites Design <br /> MVP <br /> Full-Stack Development <br /> <br /> <br />",
+        },
+        {
+            component: <ModernProducts className="mb-4" />,
+            title: "Modern Products",
+            description: "Fintech <br /> SaaS <br /> Edtech <br /> Web3",
+        },
+    ];
+
     return (
         <div className={`${styles.services} row`}>
             <div className="col-12 col-lg-5 px-3 px-lg-0">
@@ -23,66 +55,24 @@ const Services = () => {
                     Our services transcend the ordinary. From revolutionary digital experiences to immersive brand experiences and cutting-edge development, we sculpt brilliance into every pixel.
                 </p>
 
-                <Button text='Start a Project' padding='2rem' className='my-5 mb-lg-0'/>
+                <Button text='Start a Project' padding='2rem' className='my-5 mb-lg-0' />
             </div>
+
 
             <div className="col-12 col-lg-7">
                 <div className="row">
-                    <div className={`${styles.serviceCard} col-6`}>
-                        {/* <Image src={icons.craftingBrands} alt="crafting brands icons" className='mb-4' color='#FFFFFF'/> */}
-                        <CraftingBrands className='mb-4' />
-                        <h3>Crafting Brands</h3>
-
-                        <p className=''>
-                            Brand story <br />
-                            Visual identity <br />
-                            Brand guidelines
-                        </p>
-
-                    </div>
-
-                    <div className={`${styles.serviceCard} col-6`}>
-                        {/* <Image src={icons.UIUX} alt="crafting brands icons" className='mb-4' /> */}
-                        <UIUX className="mb-4" />
-                        <h3>UI/UX</h3>
-
-                        <p className=''>
-                            User Interface Design <br />
-                            User Experience Design <br />
-                            Interaction Design <br />
-                            UX Writing <br />
-                            Research <br />
-                            Design System
-                        </p>
-                    </div>
-
-                    <div className={`${styles.serviceCard} col-6`}>
-                        {/* <Image src={icons.development} alt="crafting brands icons" className='mb-4' /> */}
-                        <Development className="mb-4" />
-                        <h3>Development</h3>
-
-                        <p className=''>
-                            Mobile App Development <br />
-                            Websites Design <br />
-                            MVP <br />
-                            Full-Stack Development <br />
-                            <br />
-                            <br />
-                        </p>
-                    </div>
-
-                    <div className={`${styles.serviceCard} col-6`}>
-                        {/* <Image src={icons.modernProducts} alt="crafting brands icons" className='mb-4' /> */}
-                        <ModernProducts className="mb-4" />
-                        <h3>Modern Products</h3>
-
-                        <p className=''>
-                            Fintech <br />
-                            SaaS <br />
-                            Edtech <br />
-                            Web3
-                        </p>
-                    </div>
+                    {cards.map((card, index) => (
+                        <div
+                            key={index}
+                            className={`${styles.serviceCard} col-6 ${activeCard === index ? styles.activeCard : ''
+                                }`}
+                            onMouseEnter={() => handleMouseEnter(index)}
+                        >
+                            {card.component}
+                            <h3>{card.title}</h3>
+                            <p dangerouslySetInnerHTML={{ __html: card.description }}/>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
