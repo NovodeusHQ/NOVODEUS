@@ -38,7 +38,7 @@ const About = () => {
                 <hr className="" />
             </div>
 
-            <div className="container-fluid row my-3" data-aos="slide-right">
+            <div className="container-fluid row mt-3 mb-5" data-aos="slide-right">
                 <div className="col-6 col-md-3 text-center mb-3 mb-md-0">
                     <Image src={images.FiberOne} alt="Fiber One Logo" />
                 </div>

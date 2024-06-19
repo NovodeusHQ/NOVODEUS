@@ -19,7 +19,7 @@ const TopBanner = () => {
 
                 <button type='button' className={`${styles.topBannerBtn} rounded-pill my-0`}
                 >
-                    <Link href='/contact-us' className='no-link-underline text-white'>Button</Link>
+                    <Link href='/contact-us' className='no-link-underline text-white'>Contact Us</Link>
                 </button>
             </div>
 
