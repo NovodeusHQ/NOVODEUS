@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from "../../app/page.module.scss";
 import Image from "next/image";
-import TopBannerImage from "../../assets/svgs/TopBannerImage.svg";
+// import TopBannerImage from "../../assets/svgs/TopBannerImage.svg";
+import { images } from "../../exports/image";
 import Link from 'next/link';
 
 const TopBanner = () => {
@@ -23,8 +24,11 @@ const TopBanner = () => {
                 </button>
             </div>
 
-            <div className="col-12 col-lg-6 mt-5 mt-lg-0">
-                <Image src={TopBannerImage} alt="banner image" className='img-fluid' data-aos="zoom-in" data-aos-duration='1200' />
+            <div className="col-12 col-lg-6 mt-5 mt-lg-0 mx-5 mx-lg-0 landing-banner-image-container">
+                {/* <Image src={TopBannerImage} alt="banner image" className='img-fluid' data-aos="zoom-in" data-aos-duration='1200' /> */}
+                <Image src={images.PurpleLandingBannerImage} alt="banner image" className='img-fluid landing-banner-image image1' />
+                <Image src={images.YellowLandingBannerImage} alt="banner image" className='img-fluid landing-banner-image image2' />
+                <Image src={images.CoverLandingBannerImage} alt="banner image" className='img-fluid landing-banner-image image3' />
             </div>
         </div>
     )
