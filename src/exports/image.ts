@@ -24,9 +24,9 @@ import ProjectCoverPlaceholder from "../assets/svgs/ProjectCoverPlaceholder.svg"
 import ProjectWhatWeDidPlaceholder from "../assets/svgs/ProjectWhatWeDidPlaceholder.svg";
 import ProjectSolutionPlaceholder from "../assets/svgs/ProjectSolutionPlaceholder.svg";
 import ProjectSuggestionThumbnail from "../assets/svgs/ProjectSuggestionThumbnail.svg";
-import PurpleLandingBannerImage from "../assets/svgs/PurpleLandingBannerImage.svg";
-import YellowLandingBannerImage from "../assets/svgs/YellowLandingBannerImage.svg";
-import CoverLandingBannerImage from "../assets/svgs/CoverLandingBannerImage.svg";
+import PurpleLandingBannerImage from "../assets/images/PurpleLandingBannerImage.png";
+import YellowLandingBannerImage from "../assets/images/YellowLandingBannerImage.png";
+import CoverLandingBannerImage from "../assets/images/CoverLandingBannerImage.png";
 
 
 // Icons
