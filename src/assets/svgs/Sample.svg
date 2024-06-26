@@ -1,0 +1,19 @@
+<svg width="657" height="380" viewBox="0 0 659 384" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background layer -->
+    <!-- <rect x="37.2568" y="-3.17773" width="628.44" height="305.911" rx="30" transform="rotate(7.58286 37.2568 -3.17773)" fill="#6D37FF">
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" dur="2s" begin="0s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 37.2568 -3.17773" to="360 37.2568 -3.17773" dur="2s" begin="0s" fill="freeze"/>
+    </rect> -->
+
+    <!-- Mid layer -->
+    <rect x="662.019" y="299.566" width="628.44" height="305.911" rx="30" transform="rotate(171.987 662.019 299.566)" fill="#FFCF00">
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" dur="2s" begin="0s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 662.019 299.566" to="360 662.019 299.566" dur="2s" begin="0s" fill="freeze"/>
+    </rect>
+
+    <!-- Foreground layer -->
+    <rect x="662.019" y="299.566" width="628.44" height="305.911" rx="30" transform="rotate(171.987 662.019 299.566)" fill="#FFFFFF">
+      <animateTransform attributeName="transform" type="scale" from="0" to="1" dur="2s" begin="0s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 662.019 299.566" to="360 662.019 299.566" dur="2s" begin="0s" fill="freeze"/>
+    </rect>
+  </svg>
