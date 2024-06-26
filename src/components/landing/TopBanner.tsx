@@ -24,7 +24,7 @@ const TopBanner = () => {
                 </button>
             </div>
 
-            <div className="col-12 col-lg-6 mt-5 mt-lg-0 mx-5 mx-lg-0 landing-banner-image-container show-border">
+            <div className="col-12 col-lg-6 mt-5 mt-lg-0 mx-5 mx-lg-0 landing-banner-image-container">
                 {/* <Image src={TopBannerImage} alt="banner image" className='img-fluid' data-aos="zoom-in" data-aos-duration='1200' /> */}
                 <Image src={images.PurpleLandingBannerImage} alt="banner image" className='img-fluid landing-banner-image image1' />
                 <Image src={images.YellowLandingBannerImage} alt="banner image" className='img-fluid landing-banner-image image2' />
