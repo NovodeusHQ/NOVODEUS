@@ -34,7 +34,7 @@ p {
 .landing-banner-image-container {
     position: relative;
     // width: 659px;
-    width: 100%;
+    max-width: 580px !important;
     height: 384px;
     gap: 0px;
     // border-radius: 23px 0px 0px 0px;
