@@ -13,9 +13,9 @@ const OurTeam = () => {
             img: images.TeamMember1
         },
         {
-            name: "Anna Smith",
-            title: "Designer",
-            img: images.TeamMember2
+            name: "Oluwapelumi Olalekan",
+            title: "Web Developer",
+            img: images.Pelumi
         },
         {
             name: "Anna Smith",

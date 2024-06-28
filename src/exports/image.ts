@@ -30,7 +30,7 @@ import CoverLandingBannerImage from "../assets/svgs/CoverLandingBannerImage.svg"
 // import PurpleLandingBannerImage from "../assets/images/PurpleLandingBannerImage.png";
 // import YellowLandingBannerImage from "../assets/images/YellowLandingBannerImage.png";
 // import CoverLandingBannerImage from "../assets/images/CoverLandingBannerImage.png";
-
+import Pelumi from "../assets/images/Pelumi.jpg";
 
 // Icons
 import whyChoose from "../assets/svgs/icons/whyChooseIcon.svg";
@@ -78,6 +78,7 @@ export const images = {
     PurpleLandingBannerImage,
     YellowLandingBannerImage,
     CoverLandingBannerImage,
+    Pelumi,
 
 
 }

@@ -1,11 +1,14 @@
 import React from "react";
 import { IListItem, IReview, IClientTestimonial, ISuggestedProjectDetails } from "./dataObjs";
 import { StaticImageData } from 'next/image';
+import { Url } from "next/dist/shared/lib/router/router";
 
 export interface IButton {
     text: string;
     className?: string;
     padding?: string;
+    link?: boolean;
+    href?: Url;
 }
 
 export interface IServiceButton extends IButton {

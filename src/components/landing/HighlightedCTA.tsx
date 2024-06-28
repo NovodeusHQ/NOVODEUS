@@ -17,7 +17,7 @@ const HighlightedCTA = () => {
                         Ready to Bring Your Vision to Life?
                     </h1>
                     <div>
-                        <Button text={"Let's Talk"} padding='4rem' className='mt-3 mt-md-0' />
+                        <Button text={"Let's Talk"} padding='4rem' className='mt-3 mt-md-0' href={"/contact-us"} link={true} />
                     </div>
 
                 </div>

@@ -21,7 +21,8 @@ const CTA = () => {
                             Contact us to discuss how Novodeus can bring your vision to life.
                         </p>
                         <div>
-                        <Button text={"Let's Talk"} padding='4rem' className='my-3' />
+                        {/* <Button text={"Let's Talk"} padding='4rem' className='my-3' /> */}
+                        <Button text={"Let's Talk"} padding='4rem' className='my-3' href={"/contact-us"} link={true} />
                         </div>
 
                     </div>
